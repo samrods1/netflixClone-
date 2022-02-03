@@ -1,0 +1,123 @@
+:root{
+    --greenish: hsl(122, 100%, 5%);
+    --black:hsl(0, 0%, 3%); 
+    --cream:hsl(51, 100%, 91%);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quintessential', cursive;
+}
+/*elementos base*/
+body{
+    background: var(--black);
+    font-family: Tahoma;   
+    color: var(--cream);
+
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+    
+header #logo{
+    color: var(--cream);
+}
+
+
+.navbar{
+    width: 100%;
+    margin-right: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.navbar a{
+    color: var(--cream);
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: hsl(0, 0%, 50%);
+}
+
+/*main movie*/ 
+h1, h2 , h3{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.wrapper{
+
+    font-size: 16px;
+    background: linear-gradient(to top, hsl(0, 0%, 0%) 10%, rgba(0, 0, 0, 0.5) 100%), url('./img/capa-1.jpeg');
+    height: 30em;
+    background-size: repeat;
+    color: var(--cream);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+}
+
+.description{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#title{
+    margin-left: 20px;
+    font-family: monospace;
+    font-size: 40px;
+}
+
+.btns{
+    width: 150px;
+
+    background-color: hsl(0, 0%, 50%, .70);
+    border: none;
+    padding: 20px;
+    margin-left: 20px;
+    font-size: 12px;
+
+}
+
+.btns:hover{
+    opacity: 1;
+    background: var(--cream);
+    transition: all ease 1s;
+    cursor: pointer;
+}
+
+.boxBooks{
+    height:350px;
+    display: block;
+    transition: all ease-in-out 0.7s;
+}
+
+.boxBooks:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.footnote{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footnote i{
+    width: 40px;
+    height: 40px;
+    margin-left: 50px;
+    color: var(--cream);
+}
